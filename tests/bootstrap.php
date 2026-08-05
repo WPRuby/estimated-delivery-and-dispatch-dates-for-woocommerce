@@ -61,7 +61,7 @@ if ( ! defined( 'EDDD_VERSION' ) ) {
 	define( 'EDDD_PLUGIN_FILE', $plugin_root . '/estimated-delivery-and-dispatch-dates-for-woocommerce.php' );
 	define( 'EDDD_PLUGIN_DIR', $plugin_root . '/' );
 	define( 'EDDD_PLUGIN_URL', 'https://example.test/wp-content/plugins/estimated-delivery-and-dispatch-dates-for-woocommerce/' );
-	define( 'EDDD_TEXT_DOMAIN', 'estimated-delivery-and-dispatch-dates-for-woocommerce' );
+	define( 'EDDD_TEXT_DOMAIN', 'wpruby-delivery-estimates' );
 	define( 'EDDD_BASENAME', 'estimated-delivery-and-dispatch-dates-for-woocommerce/estimated-delivery-and-dispatch-dates-for-woocommerce.php' );
 }
 

@@ -43,13 +43,13 @@ class AdminData {
 	 */
 	public static function weekdays(): array {
 		$labels = array(
-			1 => __( 'Monday', 'estimated-delivery-and-dispatch-dates-for-woocommerce' ),
-			2 => __( 'Tuesday', 'estimated-delivery-and-dispatch-dates-for-woocommerce' ),
-			3 => __( 'Wednesday', 'estimated-delivery-and-dispatch-dates-for-woocommerce' ),
-			4 => __( 'Thursday', 'estimated-delivery-and-dispatch-dates-for-woocommerce' ),
-			5 => __( 'Friday', 'estimated-delivery-and-dispatch-dates-for-woocommerce' ),
-			6 => __( 'Saturday', 'estimated-delivery-and-dispatch-dates-for-woocommerce' ),
-			7 => __( 'Sunday', 'estimated-delivery-and-dispatch-dates-for-woocommerce' ),
+			1 => __( 'Monday', 'wpruby-delivery-estimates' ),
+			2 => __( 'Tuesday', 'wpruby-delivery-estimates' ),
+			3 => __( 'Wednesday', 'wpruby-delivery-estimates' ),
+			4 => __( 'Thursday', 'wpruby-delivery-estimates' ),
+			5 => __( 'Friday', 'wpruby-delivery-estimates' ),
+			6 => __( 'Saturday', 'wpruby-delivery-estimates' ),
+			7 => __( 'Sunday', 'wpruby-delivery-estimates' ),
 		);
 
 		$out = array();
@@ -72,31 +72,31 @@ class AdminData {
 		return array(
 			array(
 				'token' => '{earliest_date}',
-				'desc'  => __( 'Earliest delivery date.', 'estimated-delivery-and-dispatch-dates-for-woocommerce' ),
+				'desc'  => __( 'Earliest delivery date.', 'wpruby-delivery-estimates' ),
 			),
 			array(
 				'token' => '{latest_date}',
-				'desc'  => __( 'Latest delivery date.', 'estimated-delivery-and-dispatch-dates-for-woocommerce' ),
+				'desc'  => __( 'Latest delivery date.', 'wpruby-delivery-estimates' ),
 			),
 			array(
 				'token' => '{processing_days}',
-				'desc'  => __( 'Processing days (e.g. 1 or 1–2).', 'estimated-delivery-and-dispatch-dates-for-woocommerce' ),
+				'desc'  => __( 'Processing days (e.g. 1 or 1–2).', 'wpruby-delivery-estimates' ),
 			),
 			array(
 				'token' => '{min_transit_days}',
-				'desc'  => __( 'Minimum transit days.', 'estimated-delivery-and-dispatch-dates-for-woocommerce' ),
+				'desc'  => __( 'Minimum transit days.', 'wpruby-delivery-estimates' ),
 			),
 			array(
 				'token' => '{max_transit_days}',
-				'desc'  => __( 'Maximum transit days.', 'estimated-delivery-and-dispatch-dates-for-woocommerce' ),
+				'desc'  => __( 'Maximum transit days.', 'wpruby-delivery-estimates' ),
 			),
 			array(
 				'token' => '{delivery_range}',
-				'desc'  => __( 'Delivery date range.', 'estimated-delivery-and-dispatch-dates-for-woocommerce' ),
+				'desc'  => __( 'Delivery date range.', 'wpruby-delivery-estimates' ),
 			),
 			array(
 				'token' => '{cutoff_time}',
-				'desc'  => __( 'Same-day dispatch cutoff time.', 'estimated-delivery-and-dispatch-dates-for-woocommerce' ),
+				'desc'  => __( 'Same-day dispatch cutoff time.', 'wpruby-delivery-estimates' ),
 			),
 		);
 	}
@@ -110,15 +110,15 @@ class AdminData {
 		return array(
 			array(
 				'value' => Settings::PLACEMENT_AFTER_PRICE,
-				'label' => __( 'After price', 'estimated-delivery-and-dispatch-dates-for-woocommerce' ),
+				'label' => __( 'After price', 'wpruby-delivery-estimates' ),
 			),
 			array(
 				'value' => Settings::PLACEMENT_BEFORE_ADD_TO_CART,
-				'label' => __( 'Before add to cart', 'estimated-delivery-and-dispatch-dates-for-woocommerce' ),
+				'label' => __( 'Before add to cart', 'wpruby-delivery-estimates' ),
 			),
 			array(
 				'value' => Settings::PLACEMENT_AFTER_ADD_TO_CART,
-				'label' => __( 'After add to cart', 'estimated-delivery-and-dispatch-dates-for-woocommerce' ),
+				'label' => __( 'After add to cart', 'wpruby-delivery-estimates' ),
 			),
 		);
 	}
@@ -132,11 +132,11 @@ class AdminData {
 		return array(
 			array(
 				'value' => Settings::STYLE_PLAIN,
-				'label' => __( 'Plain', 'estimated-delivery-and-dispatch-dates-for-woocommerce' ),
+				'label' => __( 'Plain', 'wpruby-delivery-estimates' ),
 			),
 			array(
 				'value' => Settings::STYLE_HIGHLIGHTED,
-				'label' => __( 'Highlighted', 'estimated-delivery-and-dispatch-dates-for-woocommerce' ),
+				'label' => __( 'Highlighted', 'wpruby-delivery-estimates' ),
 			),
 		);
 	}

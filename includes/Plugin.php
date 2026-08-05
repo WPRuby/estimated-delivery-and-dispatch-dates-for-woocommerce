@@ -79,9 +79,13 @@ final class Plugin {
 	 * Constructor: wire everything up.
 	 */
 	private function __construct() {
-		if ( ! $this->is_woocommerce_active() ) {
-			add_action( 'admin_notices', array( $this, 'render_missing_woocommerce_notice' ) );
+		load_plugin_textdomain(
+			EDDD_TEXT_DOMAIN,
+			false,
+			dirname( EDDD_BASENAME ) . '/languages'
+		);
 
+		if ( ! $this->is_woocommerce_active() ) {
 			return;
 		}
 
@@ -121,24 +125,6 @@ final class Plugin {
 	 */
 	public function is_woocommerce_active(): bool {
 		return class_exists( 'WooCommerce' );
-	}
-
-	/**
-	 * Render an admin notice when WooCommerce is not active.
-	 *
-	 * @return void
-	 */
-	public function render_missing_woocommerce_notice(): void {
-		if ( ! current_user_can( 'activate_plugins' ) ) {
-			return;
-		}
-
-		echo '<div class="notice notice-error"><p>';
-		echo esc_html__(
-			'Estimated Delivery and Dispatch Dates for WooCommerce requires WooCommerce to be installed and active.',
-			'estimated-delivery-and-dispatch-dates-for-woocommerce'
-		);
-		echo '</p></div>';
 	}
 
 	/**

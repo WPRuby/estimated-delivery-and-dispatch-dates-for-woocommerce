@@ -50,7 +50,7 @@ async function request(path, { method = 'GET', body = null } = {}) {
 
 export function __(text) {
   if (window.wp && window.wp.i18n && typeof window.wp.i18n.__ === 'function') {
-    return window.wp.i18n.__(text, 'estimated-delivery-and-dispatch-dates-for-woocommerce');
+    return window.wp.i18n.__(text, 'wpruby-delivery-estimates');
   }
   return text;
 }

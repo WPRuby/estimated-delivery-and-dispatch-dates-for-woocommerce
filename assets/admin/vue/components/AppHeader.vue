@@ -63,7 +63,7 @@ defineEmits(['save']);
 const boot = window.edddAdmin || {};
 const version = boot.version || '';
 
-const title = __('Estimated Delivery and Dispatch Dates for WooCommerce');
+const title = __('WPRuby Delivery Estimates for WooCommerce');
 const description = __('Show simple delivery and dispatch estimates on WooCommerce product pages.');
 const saveLabel = __('Save changes');
 const savingLabel = __('Saving…');

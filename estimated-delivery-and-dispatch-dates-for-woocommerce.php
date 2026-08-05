@@ -4,11 +4,12 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Estimated Delivery and Dispatch Dates for WooCommerce
- * Plugin URI:        https://wpruby.com/plugin/estimated-delivery-and-dispatch-dates-for-woocommerce/
+ * Plugin URI:        https://wpruby.com/plugin/delivery-promise-for-woocommerce/
  * Description:       Show simple WooCommerce delivery and dispatch estimates on product pages using processing days, transit days, and working days.
  * Version:           1.0.0
- * Requires PHP:      7.4
  * Requires at least: 6.5
+ * Requires PHP:      7.4
+ * Requires Plugins:  woocommerce
  * Tested up to:      7.0
  * WC requires at least: 8.0
  * WC tested up to:   10.9
@@ -16,7 +17,7 @@
  * Author URI:        https://wpruby.com
  * License:           GPL-2.0+
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       estimated-delivery-and-dispatch-dates-for-woocommerce
+ * Text Domain:       wpruby-delivery-estimates
  * Domain Path:       /languages
  *
  * @package WPRuby\DeliveryPromise
@@ -35,7 +36,7 @@ define( 'EDDD_VERSION', '1.0.0' );
 define( 'EDDD_PLUGIN_FILE', __FILE__ );
 define( 'EDDD_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'EDDD_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
-define( 'EDDD_TEXT_DOMAIN', 'estimated-delivery-and-dispatch-dates-for-woocommerce' );
+define( 'EDDD_TEXT_DOMAIN', 'wpruby-delivery-estimates' );
 define( 'EDDD_BASENAME', plugin_basename( __FILE__ ) );
 
 require_once EDDD_PLUGIN_DIR . 'includes/autoload.php';

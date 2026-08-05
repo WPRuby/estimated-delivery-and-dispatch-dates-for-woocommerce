@@ -14,7 +14,7 @@ class PluginIdentityTest extends TestCase {
 
 	public function test_lite_constants_are_defined(): void {
 		$this->assertSame( '1.0.0', EDDD_VERSION );
-		$this->assertSame( 'estimated-delivery-and-dispatch-dates-for-woocommerce', EDDD_TEXT_DOMAIN );
+		$this->assertSame( 'wpruby-delivery-estimates', EDDD_TEXT_DOMAIN );
 		$this->assertStringContainsString( 'estimated-delivery-and-dispatch-dates-for-woocommerce.php', EDDD_PLUGIN_FILE );
 	}
 

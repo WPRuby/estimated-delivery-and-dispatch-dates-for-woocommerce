@@ -52,7 +52,7 @@ class Settings {
 			'cutoff_time'       => '14:00',
 			'working_days'      => array( 1, 2, 3, 4, 5 ),
 			'holidays'          => array(),
-			'message_product'   => __( 'Order today and get it between {earliest_date} – {latest_date}.', 'estimated-delivery-and-dispatch-dates-for-woocommerce' ),
+			'message_product'   => __( 'Order today and get it between {earliest_date} – {latest_date}.', 'wpruby-delivery-estimates' ),
 			'product_placement' => self::PLACEMENT_AFTER_ADD_TO_CART,
 			'display_style'     => self::STYLE_HIGHLIGHTED,
 			'show_icon'         => 'yes',

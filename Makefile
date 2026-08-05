@@ -1,6 +1,6 @@
-# Makefile for Estimated Delivery and Dispatch Dates for WooCommerce (Lite).
+# Makefile for WPRuby Delivery Estimates for WooCommerce (Lite).
 
-PLUGIN_SLUG ?= estimated-delivery-and-dispatch-dates-for-woocommerce
+PLUGIN_SLUG ?= wpruby-delivery-estimates
 MAIN_FILE ?= estimated-delivery-and-dispatch-dates-for-woocommerce.php
 VERSION ?= $(shell php -r '$$file = file_get_contents("$(MAIN_FILE)"); preg_match("/^\s*\*\s*Version:\s*(.+)$$/mi", $$file, $$m); echo isset($$m[1]) ? trim($$m[1]) : "0.0.0";')
 DIST_DIR ?= dist

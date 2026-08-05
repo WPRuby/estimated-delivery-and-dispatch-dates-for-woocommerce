@@ -72,10 +72,14 @@ class Assets {
 			add_action(
 				'admin_notices',
 				static function () {
+					if ( ! current_user_can( AdminApp::CAPABILITY ) ) {
+						return;
+					}
+
 					echo '<div class="notice notice-error"><p>';
 					echo esc_html__(
-						'Estimated Delivery: the admin app bundle is missing. Run "npm install && npm run build" inside the plugin folder.',
-						'estimated-delivery-and-dispatch-dates-for-woocommerce'
+						'WPRuby Delivery Estimates: the admin app bundle is missing. Run "npm install && npm run build" inside the plugin folder.',
+						'wpruby-delivery-estimates'
 					);
 					echo '</p></div>';
 				}

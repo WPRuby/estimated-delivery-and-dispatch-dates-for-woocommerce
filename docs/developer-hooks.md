@@ -1,6 +1,6 @@
 # Developer Hooks
 
-Estimated Delivery and Dispatch Dates for WooCommerce exposes filters so other
+WPRuby Delivery Estimates for WooCommerce exposes filters so other
 plugins can extend or override its behaviour without editing core files.
 
 All hooks use the `eddd_` prefix.

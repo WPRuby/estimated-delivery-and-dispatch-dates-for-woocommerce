@@ -87,7 +87,7 @@ class ProductPage {
 			return;
 		}
 
-		echo $this->render_html( $product ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- template escapes output.
+		echo wp_kses_post( $this->render_html( $product ) );
 	}
 
 	/**

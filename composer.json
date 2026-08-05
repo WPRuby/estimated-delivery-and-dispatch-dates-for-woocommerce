@@ -1,6 +1,6 @@
 {
   "name": "wpruby/estimated-delivery-and-dispatch-dates-for-woocommerce",
-  "description": "Automated test tooling for Estimated Delivery and Dispatch Dates for WooCommerce.",
+  "description": "Automated test tooling for WPRuby Delivery Estimates for WooCommerce.",
   "type": "wordpress-plugin",
   "license": "GPL-2.0-or-later",
   "require": {

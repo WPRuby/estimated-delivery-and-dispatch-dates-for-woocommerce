@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 class AdminApp {
 
-	const PAGE_SLUG  = 'estimated-delivery-and-dispatch-dates-for-woocommerce';
+	const PAGE_SLUG  = 'wpruby-delivery-estimates';
 	const CAPABILITY = 'manage_woocommerce';
 
 	/**
@@ -39,8 +39,8 @@ class AdminApp {
 	public function add_menu(): void {
 		add_submenu_page(
 			'woocommerce',
-			__( 'Estimated Delivery and Dispatch Dates for WooCommerce', 'estimated-delivery-and-dispatch-dates-for-woocommerce' ),
-			__( 'Estimated Delivery', 'estimated-delivery-and-dispatch-dates-for-woocommerce' ),
+			__( 'WPRuby Delivery Estimates for WooCommerce', 'wpruby-delivery-estimates' ),
+			__( 'Estimated Delivery', 'wpruby-delivery-estimates' ),
 			self::CAPABILITY,
 			self::PAGE_SLUG,
 			array( $this, 'render_page' )
@@ -56,7 +56,7 @@ class AdminApp {
 	 */
 	public function action_links( array $links ): array {
 		$url  = admin_url( 'admin.php?page=' . self::PAGE_SLUG );
-		$link = '<a href="' . esc_url( $url ) . '">' . esc_html__( 'Settings', 'estimated-delivery-and-dispatch-dates-for-woocommerce' ) . '</a>';
+		$link = '<a href="' . esc_url( $url ) . '">' . esc_html__( 'Settings', 'wpruby-delivery-estimates' ) . '</a>';
 		array_unshift( $links, $link );
 
 		return $links;
@@ -73,7 +73,7 @@ class AdminApp {
 		}
 
 		echo '<div id="eddd-admin" class="eddd-admin">';
-		echo '<p class="eddd-admin__loading">' . esc_html__( 'Loading Estimated Delivery…', 'estimated-delivery-and-dispatch-dates-for-woocommerce' ) . '</p>';
+		echo '<p class="eddd-admin__loading">' . esc_html__( 'Loading Estimated Delivery…', 'wpruby-delivery-estimates' ) . '</p>';
 		echo '</div>';
 	}
 }

@@ -1,4 +1,4 @@
-=== Estimated Delivery and Dispatch Dates for WooCommerce ===
+=== WPRuby Delivery Estimates for WooCommerce ===
 Contributors: wprubyplugins
 Donate link: https://wpruby.com/
 Tags: woocommerce, delivery date, estimated delivery date, shipping date, delivery time
@@ -13,11 +13,11 @@ Product page delivery estimates for WooCommerce using processing days, transit d
 
 == Description ==
 
-Estimated Delivery and Dispatch Dates for WooCommerce shows simple delivery and dispatch estimates on WooCommerce product pages using your configured processing days, transit days, and working days.
+WPRuby Delivery Estimates for WooCommerce shows simple delivery and dispatch estimates on WooCommerce product pages using your configured processing days, transit days, and working days.
 
 Works with WooCommerce. Delivery estimates for WooCommerce product pages are calculated locally from your store settings — no external APIs and no license key.
 
-Estimated Delivery and Dispatch Dates for WooCommerce is an independent plugin and is not affiliated with, endorsed by, or sponsored by WooCommerce, Automattic, or WordPress.
+WPRuby Delivery Estimates for WooCommerce is an independent plugin and is not affiliated with, endorsed by, or sponsored by WooCommerce, Automattic, or WordPress.
 
 Example messages:
 
@@ -46,7 +46,7 @@ Example messages:
 
 == Installation ==
 
-1. Upload the plugin files to `/wp-content/plugins/estimated-delivery-and-dispatch-dates-for-woocommerce`, or install through the WordPress plugins screen.
+1. Upload the plugin files to `/wp-content/plugins/wpruby-delivery-estimates`, or install through the WordPress plugins screen.
 2. Activate the plugin through the Plugins screen.
 3. Ensure WooCommerce is installed and active.
 4. Go to **WooCommerce → Estimated Delivery** to configure settings.

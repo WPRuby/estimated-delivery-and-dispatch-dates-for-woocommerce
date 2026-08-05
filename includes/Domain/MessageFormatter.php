@@ -157,11 +157,11 @@ class MessageFormatter {
 		$target   = $date->format( 'Y-m-d' );
 
 		if ( $target === $today ) {
-			return __( 'today', 'estimated-delivery-and-dispatch-dates-for-woocommerce' );
+			return __( 'today', 'wpruby-delivery-estimates' );
 		}
 
 		if ( $target === $tomorrow ) {
-			return __( 'tomorrow', 'estimated-delivery-and-dispatch-dates-for-woocommerce' );
+			return __( 'tomorrow', 'wpruby-delivery-estimates' );
 		}
 
 		return $this->format_date( $date );

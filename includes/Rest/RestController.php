@@ -134,7 +134,7 @@ class RestController {
 		if ( ! current_user_can( self::CAPABILITY ) ) {
 			return new WP_Error(
 				'eddd_forbidden',
-				__( 'You do not have permission to manage Estimated Delivery settings.', 'estimated-delivery-and-dispatch-dates-for-woocommerce' ),
+				__( 'You do not have permission to manage Estimated Delivery settings.', 'wpruby-delivery-estimates' ),
 				array( 'status' => 403 )
 			);
 		}
@@ -317,7 +317,7 @@ class RestController {
 		if ( '' === $value ) {
 			return new WP_Error(
 				'eddd_invalid_datetime',
-				__( 'Preview datetime cannot be empty.', 'estimated-delivery-and-dispatch-dates-for-woocommerce' ),
+				__( 'Preview datetime cannot be empty.', 'wpruby-delivery-estimates' ),
 				array( 'status' => 400 )
 			);
 		}
@@ -332,7 +332,7 @@ class RestController {
 		if ( ! $dt ) {
 			return new WP_Error(
 				'eddd_invalid_datetime',
-				__( 'Preview datetime must be a valid date/time.', 'estimated-delivery-and-dispatch-dates-for-woocommerce' ),
+				__( 'Preview datetime must be a valid date/time.', 'wpruby-delivery-estimates' ),
 				array( 'status' => 400 )
 			);
 		}
