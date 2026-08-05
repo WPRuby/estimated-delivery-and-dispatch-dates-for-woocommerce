@@ -79,12 +79,6 @@ final class Plugin {
 	 * Constructor: wire everything up.
 	 */
 	private function __construct() {
-		load_plugin_textdomain(
-			EDDD_TEXT_DOMAIN,
-			false,
-			dirname( EDDD_BASENAME ) . '/languages'
-		);
-
 		if ( ! $this->is_woocommerce_active() ) {
 			return;
 		}
